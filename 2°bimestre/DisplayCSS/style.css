@@ -1,0 +1,67 @@
+
+.container {
+    background-color: rgb(0, 135, 83);
+    display: flex;
+   padding: 20px;
+}
+.container2 {
+    background-color: rgb(57, 145, 105);
+    display: flex;
+    padding: 20px;
+}
+
+
+.item {
+    flex: 1;
+    color: beige;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.item-2 {
+   margin: 20px;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    flex: 1;
+    color: rgb(0, 0, 0);
+  background-color: aliceblue;
+}
+.item-22 {
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    flex: 2;
+    color: rgb(0, 0, 0);
+  background-color: aliceblue;
+}
+.item-3 {
+    display: inline-block;
+    flex: 1;
+    color: rgb(0, 0, 0);
+    border-width: 1px;
+    border-style:solid ;
+    border-color: black;
+    padding: 10px;
+}
+.button{
+ display: inline-block;
+ color: rgb(255, 255, 255);
+ background-color: rgb(77, 160, 107);
+padding: 10px;
+}
+.grid-container {
+    background-color: rgb(132, 132, 132);
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(3, 100px);
+    padding: 30px;
+}
+
+.grid-item {
+    flex: 2;
+    background-color: rgb(255, 255, 255);
+   
+     
+}
