@@ -1,0 +1,232 @@
+
+.main {
+    padding: 50px;
+    height: 650px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+
+    margin-top: 15px;
+     margin-left: 0px;
+     background-image: linear-gradient(180deg, #505467 0, #1f3259 50%, #00154b 100%);
+}
+
+.headfoot {
+    border-radius: 25px;
+    padding: 30px;
+    height: 350px;
+    margin-right: 0px;
+    margin-top: 0px;
+     margin-left: 0px;
+     background-image: linear-gradient(135deg, #551a6d 0, #3f0d6a 25%, #1c0368 50%, #000066 75%, #000064 100%);    }
+    
+    
+    .translate {
+        transform: translate(50px, 100px);
+    }
+    .rotate {
+        transform: rotate(20deg);
+    }
+
+  
+    figure {
+
+        max-width:200px;
+        max-height:150px;
+        width: auto;
+        height: auto;
+    }
+    figure img {
+        width:100%;     
+    }
+    figcaption{
+        text-align:center;
+        font-size: 30px;  
+        color: white;
+    }
+
+    .section {
+        position:relative;
+        bottom: 50px;
+        left: 0px;
+        display: inline-flex;
+        padding: 60px;
+        padding-bottom: 100px;
+        margin-right: auto;
+    }
+    .div
+    {
+        padding-left: 55px;
+    }
+
+    .div2{
+        display: inline-block;
+        
+    }
+    .p {
+        font-size: 25px;
+        min-width: 100px;
+        max-width: 200px;
+        color: white;
+        display: inline-block;
+    }
+    .img:hover
+    {
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+    }
+  
+    .circle:hover
+    {
+
+        transition: 500ms linear;
+        border-radius:50%;
+    }
+    .img{
+        border-radius:100%;
+        margin-left: 250px;
+        max-width:400px;
+        max-height:250px;
+        
+        width: auto;
+        height: auto;
+        display: inline-block;
+
+    }
+    .tabela
+    {
+        opacity: 0%;
+        border: 4px solid transparent;
+       
+        border-image: linear-gradient(25deg, #f5b700 0, #ffa600 8.33%, #ff9200 16.67%, #ff7a00 25%, #ff5f00 33.33%, #ff3e00 41.67%, #f00000 50%, #dc0016 58.33%, #ca0021 66.67%, #b90029 75%, #aa0032 83.33%, #9d003a 91.67%, #920045 100%)1;
+       
+    }
+
+    
+    .tabela:hover
+    {
+        opacity: 75%;
+        background-color: transparent    
+         padding: 16px;
+        text-align: center;
+        transition: all 0.7s linear ;
+
+    }
+
+    .celula
+    {
+        color: white;
+      opacity: 100%;
+         padding: 16px;
+        text-align: center;
+        
+    }
+    .titulo
+{
+    background-image: linear-gradient(25deg, #000000 0, #000000 8.33%, #9bfff8 16.67%, #7efffb 25%, #61fffb 33.33%, #000000 41.67%, #000000 50%, #1de9e4 58.33%, #17d5da 66.67%, #1bc4d1 75%, #23b5c8 83.33%, #00d9ff 91.67%, #33a0bc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.enviar
+    {
+        border-radius: 25px;     
+    }
+
+
+    .enviar:hover
+    {
+        border-radius: 25px;
+        color: rgb(0, 81, 255);
+        background-color: #1cf000;
+        transition: 0.7s linear ;
+	text-shadow: none;
+    }
+    .resetar
+    {
+        border-radius: 25px;
+    }
+
+    .resetar:hover
+    {
+        border-radius: 25px;
+
+        color: rgb(255, 255, 255);
+        background-color: #ff0000;
+        transition: 0.7s linear ;
+	text-shadow: none;
+    }
+    .label
+    { 
+      color: white;
+      
+    }
+    .label:hover
+    { 
+      opacity: 70%;
+      background-color: rgb(172, 172, 172);
+      border-radius: 25px;
+      color: #ff0000;
+    }
+
+
+    .colowhite
+    {
+        color: white;
+    }
+
+    .animatedimg1
+    {
+        border-radius: 50%;
+        
+    }
+
+    .animatedimg1:hover
+   {
+        border-radius: 50%;
+        -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotateZ(-360deg);
+        transform: rotateZ(-360deg);
+        transition: 5.0s linear ;
+    }
+
+    .animatedimg2
+    {
+        border-radius: 50%;
+        
+    }
+
+    .animatedimg2:hover
+   {
+    transform: rotateX(150deg);
+        transition: 3.0s linear ;
+    }
+
+    .animatedimg3
+    {
+        border-radius: 50%;
+    }
+
+    .animatedimg3:hover
+    {
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+        transition: 1.0s linear ;
+    }
+
+    .animatedimg4
+    {
+        border-radius:100%;
+        margin-left: 250px;
+        max-width:400px;
+        max-height:250px;
+        
+        width: auto;
+        height: auto;
+        
+        border-radius: 50%;
+    }
+
+    .animatedimg4:hover
+    {
+        transform: scale(2, 3);
+        transition: 1.0s linear ;
+    }
