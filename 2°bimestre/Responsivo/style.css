@@ -5,7 +5,10 @@
  margin: 0;
  font-family: 'Comfortaa', sans-serif;
 }
-
+#checkbox
+{
+    display: none;
+}
 
 header {
     background-color: rgb(14, 14, 14);
@@ -58,17 +61,30 @@ header {
     .nav-bar{
         padding: 1.5rem 4rem;
     }
-    .nav-item
+    .nav-list
     {
         display: none;
     }
+    
     .responsivo {
         display: block;
     }
-    .responsivo button {
-        color: wheat;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+    #menu {
+        display: none; 
+      }
+      #checkbox
+      {
+        display: block;
+      }
+      #checkbox:checked ~ .nav-list {
+        display: block;
+        flex-direction: column;
+        background-color: rgb(14, 14, 14);
+        position: absolute;
+        top: 4rem;
+        width: 100%;
+        right: 0px;
+        
     }
+    
 }
