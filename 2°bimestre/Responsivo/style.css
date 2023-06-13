@@ -1,13 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-*{
- padding: 0;
- margin: 0;
- font-family: 'Comfortaa', sans-serif;
-}
-#checkbox
-{
-    display: none;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 header {
@@ -35,7 +31,6 @@ header {
     align-items: center;
 }
 
-
 .nav-list ul {
     display: flex;
     justify-content: center;
@@ -53,38 +48,71 @@ header {
     font-weight: 400;
 }
 
-.responsivo {
+.toggle-label {
     display: none;
 }
 
+.toggle-input {
+    display: none;
+}
+
+.toggle-label::before {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 5px;
+    cursor: pointer;
+}
+
+
+
 @media screen and (max-width: 600px) {
-    .nav-bar{
-        padding: 1.5rem 4rem;
-    }
-    .nav-list
-    {
-        display: none;
-    }
-    
-    .responsivo {
-        display: block;
-    }
-    #menu {
-        display: none; 
-      }
-      #checkbox
-      {
-        display: block;
-      }
-      #checkbox:checked ~ .nav-list {
+    .toggle-input:checked ~ .nav-list {
         display: block;
         flex-direction: column;
         background-color: rgb(14, 14, 14);
         position: absolute;
         top: 4rem;
         width: 100%;
-        right: 0px;
+        right: 0;
+    }
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+.logo{
+    font-size: small;
+}
+    .nav-list {
+        display: none;
+    }
+
+    .toggle-label {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 1.15rem;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    .toggle-label:focus {
+        outline: none;
+    }
+
+    .nav-list.active {
+        display: block;
+        flex-direction: column;
+        background-color: rgb(14, 14, 14);
+        position: absolute;
+        top: 4rem;
+        width: 100%;
+        right: 0;
         
     }
-    
+
+    .nav-list.active ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
