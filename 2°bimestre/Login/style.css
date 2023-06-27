@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+*{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+img{
+    width: 25vw;
+}
+
+h1{
+    font-size: 6vh;
+    font-weight: 400;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(90deg, rgb(250, 165, 243), rgb(245, 255, 186), rgb(187, 183, 253));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-son{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+}
+
+main{
+    background-color: rgb(65, 45, 62);
+    width: 98vw;
+    height: 98vh;
+    top: 1vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+}
+
+form{
+    background-color: #bda0e7;
+    padding: 5vh;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(234, 1, 255, 0.664);
+    height: 55vh;
+    width: 18vw;
+    color: rgb(255, 255, 255);
+}
+
+.title-form{
+    margin: 0;
+    font-size: 5vh;
+}
+
+label{
+    font-size: 25px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"]{
+    width: 90%;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+
+
+input[type="submit"]{
+    display: block;
+    transition: all .1s;
+    width: 100%;
+    font-size: 5vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    padding: 1vh 0;
+    background: linear-gradient(to bottom right, rgb(242, 255, 126), rgb(238, 76, 216));
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-style: none;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.02);
+}
+
+
+@media screen and (max-width: 1000px){
+    main{
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2vh;
+        border-radius: 55px;
+    }
+
+    h1{
+        font-size: 8vw;
+    }
+
+    .div-son{
+        margin: 3vh;
+    }
+    
+    form{
+        margin-top: 4vh;
+        width: 70vw;
+    }
+}
