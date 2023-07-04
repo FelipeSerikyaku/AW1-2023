@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Página</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="meio">ESCOLHA O ANIMAL</div>
+   <div class="animalfav">
+    <label for="animal">Animal Favorito:</label>
+    <input id="radio" type="radio" name="animal" value="cachorro" onclick="trocarImagem(this.value)" checked /> Cachorro
+    <input  id="radio" type="radio" name="animal" value="gato" onclick="trocarImagem(this.value)" /> Gato
+    </div>
+    
+    <div type="number" id="contador" name="contador">
+      <h1> Dinheiro:  <span id="money-text"></span></h1>
+     
+    </div>
+  </header>
+
+  <main>
+    <div class="fundoanimal">
+    <h1>CLIQUE NO BIXIN</h1>
+    <img  src="" id="animal-image" class="imagem" >
+    </div>
+    <ul id="button-list">
+      <li><button onclick="buttonClick(1)">R$45 Comprar Pote de ração</button></li>
+      <li><button onclick="buttonClick(2)">R$600 Comprar ração</button></li>
+      <li><button onclick="buttonClick(3)">R$8000 Comprar Casinha</button></li>
+      <li><button onclick="buttonClick(4)">R$1300000 Comprar Brinquedos</button></li>
+      <li><button onclick="buttonClick(5)">R$50000000 Comprar Remédios</button></li>
+      <li><button onclick="buttonClick(6)">R$12000000000 Ficar rico porque sim</button></li>
+
+    </ul>
+  </main>
+
+  <footer id="footer">
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
