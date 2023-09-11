@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Athena</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #000000;
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option {
+            margin: 5px 0;
+        }
+
+        .submit-button {
+            background-color: #4ddb34;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tag {
+            display: none;
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .correct {
+            background-color: #2ecc71;
+            color: #ffffff;
+        }
+
+        .incorrect {
+            background-color: #e74c3c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz sobre a Athena</h1>
+
+        <div class="question">
+            <p>1. Qual a cidade natal da Athena?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q1" value="Itapeva"> Itapeva</label>
+                <label class="option"><input type="radio" name="q1" value="Itabera"> Itaberá</label>
+                <label class="option"><input type="radio" name="q1" value="Buri"> Buri</label>
+                <label class="option"><input type="radio" name="q1" value="Itapetininga"> Itapetininga</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <div class="question">
+            <p>2. Quantos cacos macacos a Athena já teve?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q2" value="1"> Um</label>
+                <label class="option"><input type="radio" name="q2" value="3"> Três</label>
+                <label class="option"><input type="radio" name="q2" value="5"> Cinco</label>
+                <label class="option"><input type="radio" name="q2" value="4"> Quatro</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+
+        <div class="question">
+            <p>3. Quem é o humano favorito da Athena?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q3" value="mamãe"> Mamãe</label>
+                <label class="option"><input type="radio" name="q3" value="vovó"> Vovó</label>
+                <label class="option"><input type="radio" name="q3" value="papai"> Papai</label>
+                <label class="option"><input type="radio" name="q3" value="vovô"> Vovô</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <div class="question">
+            <p>4. Qual o irmão favorito da Athena?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q4" value="Dalila"> Dalila</label>
+                <label class="option"><input type="radio" name="q4" value="Molly"> Molly</label>
+                <label class="option"><input type="radio" name="q4" value="Di"> Di Ferreiro</label>
+                <label class="option"><input type="radio" name="q4" value="todas"> Todas opções acima</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+        <div class="question">
+            <p>5. Qual fruta favorita da Athena?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q5" value="maca"> Maça</label>
+                <label class="option"><input type="radio" name="q5" value="banana"> Banana</label>
+                <label class="option"><input type="radio" name="q5" value="bananaepera"> Banana e pera</label>
+                <label class="option"><input type="radio" name="q5" value="macaebanana"> Maça e banana</label>
+            </div>
+            <button class="submit-button">Enviar</button>
+            <span class="tag correct">Correto!</span>
+            <span class="tag incorrect">Incorreto.</span>
+        </div>
+
+    </div>
+
+    <script >
+        const botoes = document.querySelectorAll("button");
+
+botoes.forEach((botao, index) => {
+    if (index != 0) {
+            botao.disabled = true
+            }
+    botao.addEventListener("click", () =>{
+        if(index===0){
+            const opcaoCorreta = document.querySelector('input[value="Itabera"]');
+
+            if(opcaoCorreta.checked){
+                let correto = document.querySelectorAll(".correct")[index];
+
+                correto.style.display = "block";
+
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "none";
+                botao.disabled = true
+                botoes[index + 1].disabled = false;
+            } else{
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "block";
+
+                
+            }
+        }
+        if(index===1){
+            const opcaoCorreta = document.querySelector('input[value="3"]');
+
+            if(opcaoCorreta.checked){
+                let correto = document.querySelectorAll(".correct")[index];
+
+                correto.style.display = "block";
+
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "none";
+                botao.disabled = true
+                botoes[index + 1].disabled = false;
+            } else{
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "block";
+            }
+            
+        }
+        if(index===2){
+            const opcaoCorreta = document.querySelector('input[value="papai"]');
+
+            if(opcaoCorreta.checked){
+                let correto = document.querySelectorAll(".correct")[index];
+
+                correto.style.display = "block";
+
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "none";
+                botao.disabled = true
+                botoes[index + 1].disabled = false;
+            } else{
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "block";
+
+                
+            }
+        }
+        if(index===3){
+            const opcaoCorreta = document.querySelector('input[value="Di"]');
+
+            if(opcaoCorreta.checked){
+                let correto = document.querySelectorAll(".correct")[index];
+
+                correto.style.display = "block";
+
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "none";
+                botao.disabled = true
+                botoes[index + 1].disabled = false;
+            } else{
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "block";
+
+                
+            }
+        }
+        if(index===4){
+            const opcaoCorreta = document.querySelector('input[value="macaebanana"]');
+
+            if(opcaoCorreta.checked){
+                let correto = document.querySelectorAll(".correct")[index];
+
+                correto.style.display = "block";
+
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "none";
+                botao.disabled = true
+                botoes[index + 1].disabled = false;
+            } else{
+                let incorreto = document.querySelectorAll(".incorrect")[index];
+                incorreto.style.display = "block";
+
+                
+            }
+        }
+        
+    })
+})
+    </script>
+</body>
+</html>
